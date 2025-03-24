@@ -66,7 +66,8 @@ const checkout = () => {
   right: 0;
   bottom: 0;
   width: 400px;
-  background: white;
+  background: var(--card-background);
+  color: var(--text-color);
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -125,7 +126,8 @@ const checkout = () => {
 .quantity-controls button {
   padding: 0.25rem 0.5rem;
   border: 1px solid var(--border-color);
-  background: white;
+  background: var(--card-background);
+  color: var(--text-color);
 }
 
 .cart-footer {

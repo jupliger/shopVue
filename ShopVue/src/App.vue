@@ -16,12 +16,22 @@ import CartModal from './components/CartModal.vue'
 
 <style>
 :root {
+  /* Light Theme (default) */
   --primary-color: #42b883;
   --secondary-color: #35495e;
   --background-color: #ffffff;
   --text-color: #2c3e50;
   --border-color: #e2e8f0;
+  --card-background: #ffffff;
   --navbar-height: 70px;
+}
+
+[data-theme="dark"] {
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --border-color: #333333;
+  --card-background: #2d2d2d;
+  --secondary-color: #42b883;
 }
 
 * {

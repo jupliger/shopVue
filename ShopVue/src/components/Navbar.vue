@@ -6,6 +6,9 @@
       </RouterLink>
       
       <div class="nav-links">
+        <button @click="themeStore.toggleTheme()" class="theme-toggle">
+          {{ themeStore.isDark ? '☀️' : '🌙' }}
+        </button>
         <RouterLink to="/" class="nav-link">Home</RouterLink>
         <button class="cart-button" @click="cartStore.isOpen = true">
           Cart ({{ cartStore.totalItems }})
@@ -18,17 +21,26 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { useCartStore } from '../stores/cartStore'
+import { useThemeStore } from '../stores/themeStore'
+import { onMounted } from 'vue'
 
 const cartStore = useCartStore()
+const themeStore = useThemeStore()
+
+onMounted(() => {
+  themeStore.initTheme()
+})
 </script>
 
 <style scoped>
 .navbar {
-  background-color: white;
+  background-color: var(--card-background);
+  color: var(--text-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
+ 
 }
 
 .navbar-content {
@@ -36,6 +48,7 @@ const cartStore = useCartStore()
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  margin: 0 30px;
 }
 
 .logo {
@@ -72,5 +85,19 @@ const cartStore = useCartStore()
 
 .cart-button:hover {
   background-color: #3aa876;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: var(--border-color);
 }
 </style>
