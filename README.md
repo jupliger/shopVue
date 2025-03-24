@@ -52,7 +52,7 @@ src/
 └── main.js
 ``````
 
-###✨ Diferenciais (Opcionais)
+### ✨ Diferenciais
 - Tema escuro/claro (usando CSS variables).
 - Animações ao adicionar itens ao carrinho (Vue Transition).
 - Integração com Mercado Pago (simulada via API mock).
