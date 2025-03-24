@@ -8,7 +8,6 @@ Um e-commerce moderno desenvolvido com Vue.js 3, Pinia e Fake Store API. Projeto
 - **Pinia** (gerenciamento de estado do carrinho)
 - **Fake Store API** ([https://fakestoreapi.com](https://fakestoreapi.com))
 - **Vue Router** (navegação entre páginas)
-- **Tailwind CSS** (estilização)
 - **Axios** (chamadas HTTP)
 
 ## 🎯 Funcionalidades Principais
