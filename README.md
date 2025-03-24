@@ -2,6 +2,8 @@
 
 Um e-commerce moderno desenvolvido com Vue.js 3, Pinia e Fake Store API. Projeto ideal para portfólio, demonstrando gerenciamento de estado, consumo de API e UI responsiva.
 
+Teste aqui: https://shop-vue-bice.vercel.app/
+
 ## 🔧 Tecnologias Utilizadas
 
 - **Vue 3** (Composition API)
